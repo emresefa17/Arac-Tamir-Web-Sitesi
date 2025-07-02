@@ -112,4 +112,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Check elements on scroll
     window.addEventListener('scroll', checkScroll);
+
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger-menu');
+    const menu = document.querySelector('.menu');
+    if (hamburger && menu) {
+        hamburger.addEventListener('click', function() {
+            menu.classList.toggle('menu-active');
+        });
+    }
 }); 
